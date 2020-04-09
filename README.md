@@ -1,6 +1,6 @@
 # CSPpipeline
 
-## Steps to Run Blast
+## Steps to run blast.py
 1. Open google colab - https://colab.research.google.com/
 2. Login with your gmail account to enable google drive access. We will use google drive to store and run our python script. All the results will be saved to google drive
 3. Create the following two folders
