@@ -1,0 +1,71 @@
+blast-full.py
+Working on the Accession Number: QBX23717.1
+Check the status via web-browser:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&FORMAT_OBJECT=SearchInfo&RID=9MCGPK95014
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+We got some hits, will grab the json hits file
+Downloaded the JSON hits file
+###################################################
+Query Cover %	E_Value	Accession Id	Subject Name
+###################################################
+99.72	0	WP_136022800	Streptococcus pyogenes
+99.72	0	WP_111679348	Streptococcus dysgalactiae
+99.72	0	WP_138083809	Streptococcus dysgalactiae
+99.72	0	WP_136284882	Streptococcus pyogenes
+99.72	0	WP_032460164	Streptococcus pyogenes
+99.72	0	WP_110410812	Streptococcus pyogenes
+99.72	0	WP_136263979	Streptococcus pyogenes
+99.72	0	WP_136298220	Streptococcus pyogenes
+96.36	0	WP_136037644	Streptococcus pyogenes
+96.36	0	WP_136132953	Streptococcus pyogenes
+###################################################
+##### TOP HIT = WP_136022800 Streptococcus pyogenes
+###################################################
+We have a top hit, running a reverse blast on the Accession Number: WP_136022800
+Check the status via web-browser:
+https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Get&FORMAT_OBJECT=SearchInfo&RID=9MEYAZRC014
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+Will wait and check in 60 seconds
+We got some hits, will grab the json hits file
+Downloaded the JSON hits file
+###################################################
+Query Cover %	E_Value	Accession Id	Subject Name
+###################################################
+99.72	0	WP_136022800	Streptococcus pyogenes
+99.72	0	QBX23717	Streptococcus phage Javan146
+99.72	0	WP_136112598	Streptococcus pyogenes
+95.84	0	WP_002990034	Streptococcus pyogenes
+95.84	0	WP_010922218	Streptococcus pyogenes
+99.72	0	WP_014635509	Streptococcus pyogenes
+95.84	0	WP_136040266	Streptococcus pyogenes
+95.84	0	WP_020833526	Streptococcus pyogenes
+95.84	0	WP_046177708	Streptococcus dysgalactiae
+99.72	0	WP_136111941	Streptococcus pyogenes
+###################################################
+##### TOP HIT = WP_136022800 Streptococcus pyogenes
+###################################################
+
+Process finished with exit code 0
