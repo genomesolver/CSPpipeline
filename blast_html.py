@@ -51,7 +51,7 @@ def check_request_status(requestid):
 # ##
 
 
-def blast(protein, query_filter, save_json_file_name, save_csv_file_name):
+def blast(protein, query_filter, save_csv_file_name):
     ###############
     # STEP 1 - Submit the query
     ###############
@@ -122,16 +122,14 @@ for accession_number in input_file:
     print("Working on the Accession Number:", accession_number.rstrip())
     # Forward blast the accession number
     file_name_slug = (accession_number.replace(".1", ""))
-    save_json_file_name = "tmp/" + file_name_slug.rstrip() + "-results.json"
     save_csv_file_name = "output/" + file_name_slug.rstrip() + "-results.csv" 
-    topHit = blast(accession_number, 'ENTREZ_QUERY=txid2[ORGN]', save_json_file_name, save_csv_file_name)
+    topHit = blast(accession_number, 'ENTREZ_QUERY=txid2[ORGN]', save_csv_file_name)
     # Reverse blast the top hit's accession number
     if topHit:
         print("We have a top hit, running a reverse blast on the Accession Number:", topHit)
         reverse_file_name_slug = topHit.replace(".1", "")
-        save_json_file_name = "tmp/" + file_name_slug.rstrip() + "-rev-" + reverse_file_name_slug.rstrip() + "-results.json"
         save_csv_file_name = "output/" + file_name_slug.rstrip() + "-rev-" + reverse_file_name_slug.rstrip() + "-results.csv"
-        rev_topHit = blast(topHit, 'ENTREZ_QUERY=txid10239[ORGN]', save_json_file_name, save_csv_file_name)
+        rev_topHit = blast(topHit, 'ENTREZ_QUERY=txid10239[ORGN]', save_csv_file_name)
 input_file.close()
 if rev_topHit == accession_number:
     print('The search has returned a positive result indicating horizontal gene transfer.\nForward Blast: {} -> {} Reverse Blast: {} -> {}'.format(accession_number, topHit, topHit, rev_topHit))
